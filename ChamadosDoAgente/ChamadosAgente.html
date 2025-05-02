@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="stylesChamados.css">
 </head>
 <body>
+
+    <!-- Cabeçalho -->
+    <header class="text-center p-4">
+        <h1>Chamados do Agente</h1>       
+    </header>
+
     <div class="container">
         <div class="tabs">
             <button class="tab-button" onclick="openTab('dados')">Descrição</button>
@@ -17,12 +23,10 @@
                 <fieldset>
                     <legend>Dados do Chamado</legend>
                     <label for="codigo">Código do Chamado:</label>
-                    <input type="text" id="codigo" value="SPVP0001" readonly>
-
-                    <input type="text" id="codigo1" value="SPVP0002" readonly>
+                    <input type="text" id="codigo" value="SPVP0001" >                    
 
                     <label for="servico">Serviços:</label>
-                    <input type="text" id="servico" value="Problemas em Vias Públicas" readonly>
+                    <input type="text" id="servico" value="Problemas em Vias Públicas" >
 
                     <label for="empresa">Empresa:</label>
                     <input type="text" id="empresa" value="xxxxxxxx">
@@ -31,7 +35,7 @@
                     <input type="text" id="responsavel" placeholder="Nome do agente">
 
                     <label for="status">Status:</label>
-                    <input type="text" id="status" value="EM ABERTO" readonly>
+                    <input type="text" id="status" value="EM ABERTO" >
                 </fieldset>
 
                 <fieldset>
@@ -71,8 +75,8 @@
                     <input type="text" id="bairro" placeholder="Bairro">
                 </fieldset>
 
-                <button type="submit">SALVAR</button>
-                <button type="button" onclick="fechar()">FECHAR</button>
+                <button class="tab-button" type="submit">SALVAR</button>
+                <button class="tab-button" type="button" onclick="fechar()">FECHAR</button>
             </form>
         </div>
         <div id="anexo" class="tab-content">

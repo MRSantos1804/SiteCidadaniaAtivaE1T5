@@ -1,8 +1,27 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
+    font-family: 'Roboto', sans-serif;
+  }
+   
+header h1 {
+    color: #344E41;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+header p {
+    color: #344E41;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DAD7CD;
+    color: #344E41;
 }
 
 .icon-small {
@@ -29,8 +48,39 @@ body {
 .table {
     border-collapse: collapse;
     border-radius: 8px;
-    overflow: hidden;    
+    overflow: hidden;
+    justify-items: auto;
 }
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+
+.service-card {
+    background-color: #A3B18A;
+    padding: 1rem;
+    border-radius: 12px;
+    border-top: 6px solid #3A5A40;
+    width: 70%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .service-card h3 {
+    color: #344E41;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
 
 /* Responsividade para telas pequenas */
 @media (max-width: 576px) {  
@@ -39,7 +89,7 @@ body {
         color: #000;
     }
 
-    .central-icons .icon {
+    .icon {
         /*width: 30px;
         height: 30px;*/
         display: none;
@@ -81,7 +131,7 @@ body {
         margin-bottom: 15px;
     }
 
-    .central-icons {
+    .service-card icon {
         /*display: none;  Ocultar ícones em telas médias */
         display: flex;
         justify-content: center;
@@ -117,7 +167,7 @@ body {
     margin-bottom: 10px;}
 
     /* Exibir ícones normalmente */
-    .central-icons {
+    .service-card icon {
         display: flex;
         justify-content: center;
         margin-top: 20px;
