@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #DAD8CC;
+    background-color: #A2B18A;
     padding: 20px;
 }
 
@@ -41,7 +41,7 @@ fieldset{
 
 /* Formulário */
 form {
-    background-color: #A2B18A;
+    background-color: #DAD8CC;
     padding: 2.5rem;
     border-radius: 1.25rem;
     display: flex;
