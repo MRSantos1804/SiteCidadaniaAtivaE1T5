@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abertura de Chamado</title>
+    <link rel="stylesheet" href="aberturastyle.css">
+    <script src="aberturascript.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Abertura de Chamado</h1>
+        </header>
+
+        <form action="" method="post">
+            <fieldset>
+                <legend>Detalhes do Chamado</legend>
+                <div>
+                    <label for="problema">Selecione o seu Problema:</label>
+                    <select id="problema" name="problema" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="ambientais">Ambientais</option>
+                        <option value="lixo">Coleta de Lixo</option>
+                        <option value="iluminacao">Iluminação Pública</option>
+                        <option value="mobilizacao_urbana">Mobilização Urbana</option>
+                        <option value="saude">Saúde</option>
+                        <option value="transito">Trânsito</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="descricao">Motivo da Abertura:</label>
+                    <textarea id="descricao" name="descricao" rows="5" placeholder="Descreva o motivo da abertura do chamado com máximo de detalhes possíveis" required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div>
+                    <label for="solicitante">Solicitante:</label>
+                    <input type="text" id="solicitante" name="solicitante" placeholder="Digite o seu nome completo" required>
+                </div>
+                <div>
+                    <label for="numerodecontato">Número de Contato:</label>
+                    <input type="tel" id="numerodecontato" name="numerodecontato" placeholder="(XX) XXXXX-XXXX" required pattern="\(\d{2}\) \d{5}-\d{4}" title="Digite no formato (XX) XXXXX-XXXX">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                <div>
+                    <label for="logradouro">Logradouro:</label>
+                    <input type="text" id="logradouro" name="logradouro" placeholder="Rua, Avenida, etc." required>
+                </div>
+                <div>
+                    <label for="numero">Número:</label>
+                    <input type="number" id="numero" name="numero" placeholder="Número da residência" required>
+                </div>
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro" required>
+                </div>
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="Apenas números" required pattern="\d{8}" title="Digite um CEP válido com 8 números.">
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade" name="cidade" required>
+                        <option value="" disabled selected>Selecione a cidade</option>
+                        <!-- Lista de cidades -->
+                        <option value="Belo Horizonte">Belo Horizonte</option>
+                        <option value="Araguari">Araguari</option>
+                        <option value="Barbacena">Barbacena</option>
+                        <option value="Betim">Betim</option>
+                        <option value="Caratinga">Caratinga</option>
+                        <option value="Cataguases">Cataguases</option>
+                        <option value="Conceição do Mato Dentro">Conceição do Mato Dentro</option>
+                        <option value="Conselheiro Lafaiete">Conselheiro Lafaiete</option>
+                        <option value="Contagem">Contagem</option>
+                        <option value="Coronel Fabriciano">Coronel Fabriciano</option>
+                        <option value="Curvelo">Curvelo</option>
+                        <option value="Divinópolis">Divinópolis</option>
+                        <option value="Governador Valadares">Governador Valadares</option>
+                        <option value="Ibirité">Ibirité</option>
+                        <option value="Ipatinga">Ipatinga</option>
+                        <option value="Itabira">Itabira</option>
+                        <option value="Itajubá">Itajubá</option>
+                        <option value="Ituiutaba">Ituiutaba</option>
+                        <option value="Juiz de Fora">Juiz de Fora</option>
+                        <option value="Lavras">Lavras</option>
+                        <option value="Mariana">Mariana</option>
+                        <option value="Montes Claros">Montes Claros</option>
+                        <option value="Muriaé">Muriaé</option>
+                        <option value="Nova Lima">Nova Lima</option>
+                        <option value="Ouro Preto">Ouro Preto</option>
+                        <option value="Passos">Passos</option>
+                        <option value="Patos de Minas">Patos de Minas</option>
+                        <option value="Poços de Caldas">Poços de Caldas</option>
+                        <option value="Pouso Alegre">Pouso Alegre</option>
+                        <option value="Ribeirão das Neves">Ribeirão das Neves</option>
+                        <option value="Sabará">Sabará</option>
+                        <option value="Santa Luzia">Santa Luzia</option>
+                        <option value="São João del-Rei">São João del-Rei</option>
+                        <option value="Sete Lagoas">Sete Lagoas</option>
+                        <option value="Teófilo Otoni">Teófilo Otoni</option>
+                        <option value="Timóteo">Timóteo</option>
+                        <option value="Uberaba">Uberaba</option>
+                        <option value="Uberlândia">Uberlândia</option>
+                        <option value="Ubá">Ubá</option>
+                        <option value="Varginha">Varginha</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inserir Imagem</legend>
+                <div>
+                    <label for="imagens">Selecione as imagens:</label>
+                    <input type="file" id="imagens" name="imagens[]" accept="image/*" multiple>
+                </div>
+            </fieldset>
+
+            <footer>
+                <button type="submit">Salvar</button>
+                <button type="button" onclick="window.history.back()">Cancelar</button>
+            </footer>
+        </form>
+    </div>
+</body>
+</html>
