@@ -12,13 +12,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #A2B18A;
+    background-color: #DAD8CC;
     padding: 20px;
 }
 
 /* Títulos */
 h1, h2 {
-    color: #000;
+    color: #344E41;
     text-align: center;
 }
 
@@ -31,17 +31,19 @@ legend {
     font-size: 25px;
     margin-bottom: 0.75rem;
     font-weight: bold;
+    color: #344E41;
 }
 
 fieldset{
     border: 2px solid #557E54;
     border-radius: 0.625rem;
     padding: 1.25rem;
+    color: #344E41;
 }
 
 /* Formulário */
 form {
-    background-color: #DAD8CC;
+    background-color: #A2B18A;
     padding: 2.5rem;
     border-radius: 1.25rem;
     display: flex;
