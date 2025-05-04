@@ -7,6 +7,10 @@ function openTab(tabId) {
     document.getElementById(tabId).classList.add('active');
 }
 
-function fechar() {
-    alert("Fechando o formulário.");
+//function fechar() {
+//    alert("Fechando o formulário.");
+//}
+
+function fechar() { 
+    window.location.reload();
 }

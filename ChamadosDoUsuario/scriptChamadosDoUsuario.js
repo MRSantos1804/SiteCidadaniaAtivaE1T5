@@ -8,5 +8,5 @@ function openTab(tabId) {
 }
 
 function fechar() {
-    alert("Fechando o formulário.");
+    window.location.reload();
 }
